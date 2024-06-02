@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+    <!-- Bootsttrab CSS -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body class="bg-secondary">
+
+    <div class="translate d-flex align-items-center justify-content-center flex-column">
+
+        <h1 class="heading shadow-lg mt-3 rounded">Translator Application</h1>
+
+        <div class="main d-flex align-items-center justify-content-center flex-column">
+            <h2 class="text-wrap badge" style="width: 6rem;">Translation</h2>
+            <div class="text d-flex justify-content-between">
+                <!-- From Select -->
+                <div class="text-area d-flex flex-column align-items-center">
+                    <textarea name="" id="from-text" cols="20" rows="10" style="background-color: rgb(116, 116, 116); color: white; font-weight: bold;"></textarea>
+                    <select id="from" class="mt-2 pe-3 bg-secondary text-white fw-bold"></select>
+                </div>
+                <!-- Revert Button -->
+                <div class="d-flex justify-content-center align-items-center">
+                    <button id="revertBtn"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+                </div>
+                <!-- To Select -->
+                <div class="text-area d-flex flex-column align-items-center">
+                    <textarea name="" id="to-text" cols="20" rows="10" disabled  style="background-color: rgb(33, 33, 33); color: white; font-weight: bold;"></textarea>
+                    <select id="to" class="mt-2 pe-3 bg-secondary text-white fw-bold"></select>
+                </div>
+            </div>
+            <button class="translateBtn btn btn-primary mt-4">Translate</button>
+        </div>
+    </div>
+
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
